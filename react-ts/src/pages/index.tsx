@@ -23,7 +23,17 @@ export const Post = Loadable({
 export const Posts = Loadable({
     loader: () => import('./PostScreen/Posts'),
     loading: Loading
-})
+});
+
+export const Counter = Loadable({
+    loader: () => import('./CounterScreen'),
+    loading: Loading
+});
+
+export const ReducerSample = Loadable({
+    loader: () => import('./ReducerSample'),
+    loading: Loading
+});
 
 // export const Home = withSplitting(() => import('../pages/HomeScreen'));
 // export const Skill = withSplitting(() => import('../pages/SkillScreen'));

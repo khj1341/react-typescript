@@ -33,6 +33,8 @@ export default function Menu() {
                 <li><NavLink exact to="/about" activeStyle={activeStyle}>About</NavLink></li>
                 <li><NavLink to="/about/aaa" activeStyle={activeStyle}>About AAA</NavLink></li>
                 <li><NavLink to="/posts" activeStyle={activeStyle} onMouseOver={handleMouseOver}>Posts</NavLink></li>
+                <li><NavLink to="/count" activeStyle={activeStyle}>Count</NavLink></li>
+                <li><NavLink to="/reducer" activeStyle={activeStyle}>Reducer Sample</NavLink></li>
                 <button onClick={handleClick}>Click Me!</button>
                 {visible && <SplitMe />}
             </ul>

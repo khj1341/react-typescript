@@ -40,6 +40,11 @@ export const TodoList = Loadable({
     loading: Loading
 });
 
+export const TodoForRedux = Loadable({
+    loader: () => import('./TodoForReduxScreen'),
+    loading: Loading
+});
+
 // export const Home = withSplitting(() => import('../pages/HomeScreen'));
 // export const Skill = withSplitting(() => import('../pages/SkillScreen'));
 // export const Post = withSplitting(() => import('../pages/PostScreen/Post'));

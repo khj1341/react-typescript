@@ -1,35 +1,43 @@
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from '../modules'
-import { decrease, increase, increaseBy } from '../modules/counter';
+// container comp
 
-import Counter from '../components/Counter'
+// import React from 'react'
+// import { useDispatch, useSelector } from 'react-redux'
+// import { RootState } from '../modules'
+// import { decrease, increase, increaseBy } from '../modules/counter';
 
-function CounterContainer() {
-    const count = useSelector((state: RootState) => state.counter.count);
-    const dispatch = useDispatch();
+// import Counter from '../components/Counter'
 
-    const onIncrease = () => {
-        dispatch(increase());
-    };
+// function CounterContainer() {
+//     const count = useSelector((state: RootState) => state.counter.count);
+//     const dispatch = useDispatch();
 
-    const onDecrease = () => {
-        dispatch(decrease());
-    };
+//     const onIncrease = () => {
+//         dispatch(increase());
+//     };
 
-    const onIncreaseBy = (diff: number) => {
-        dispatch(increaseBy(diff));
-    }
+//     const onDecrease = () => {
+//         dispatch(decrease());
+//     };
 
-    return (
-        <Counter
-            count={count}
-            onIncrease={onIncrease}
-            onDecrease={onDecrease}
-            onIncreaseBy={onIncreaseBy}
-        />
+//     const onIncreaseBy = (diff: number) => {
+//         dispatch(increaseBy(diff));
+//     }
+
+//     return (
+//         <Counter
+//             count={count}
+//             onIncrease={onIncrease}
+//             onDecrease={onDecrease}
+//             onIncreaseBy={onIncreaseBy}
+//         />
             
-    )
-}
+//     )
+// }
 
-export default CounterContainer
+// export default CounterContainer
+
+// 통합된 comp (커스텀 훅)
+
+export default function CounterContainer() {
+    return;
+}

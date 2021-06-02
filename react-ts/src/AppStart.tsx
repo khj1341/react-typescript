@@ -7,6 +7,7 @@ import { Home, Skill, Posts, Counter, ReducerSample, TodoList } from './pages';
 import MyFormScreen from './pages/MyFormScreen';
 
 import { TodosContextProvider } from './contexts/TodosContext';
+import CounterContainer from './containers/CounterContainer';
 
 export default function AppStart() {
 
@@ -29,6 +30,7 @@ export default function AppStart() {
                     <Route path="/count" component={Counter} />
                     <Route path="/reducer" component={ReducerSample} />
                     <Route path="/todo" component={TodoList} />
+                    <Route path="/reduxCounter" component={CounterContainer} />
                     <MyFormScreen onSubmit={onSubmit} />
                 </Wrapper>
             </BrowserRouter>

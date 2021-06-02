@@ -36,6 +36,7 @@ export default function Menu() {
                 <li><NavLink to="/count" activeStyle={activeStyle}>Count</NavLink></li>
                 <li><NavLink to="/reducer" activeStyle={activeStyle}>Reducer Sample</NavLink></li>
                 <li><NavLink to="/todo" activeStyle={activeStyle}>Todo</NavLink></li>
+                <li><NavLink to="/reduxCounter" activeStyle={activeStyle}>Redux Counter</NavLink></li>
                 <button onClick={handleClick}>Click Me!</button>
                 {visible && <SplitMe />}
             </ul>

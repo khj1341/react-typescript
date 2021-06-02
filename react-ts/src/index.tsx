@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import AppStart from './AppStart';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import rootReducer from './modules';
+import { Provider } from 'react-redux';
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <AppStart />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
